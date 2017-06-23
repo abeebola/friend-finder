@@ -1,0 +1,149 @@
+[
+    {
+        "_id": "5915f47dcd3ea57df7dc3a08",
+        "email": "fibre@fibre.ng",
+        "age": 80,
+        "gender": "male",
+        "location": "Yaba",
+        "__v": 0,
+        "hobbies": [
+            "tennis"
+        ],
+        "preferences": {},
+        "created": "2017-05-12T17:44:29.832Z",
+        "suggested_friends": [
+            "olatunde",
+            "generalgmt"
+        ],
+        "name": "Bolaji"
+    },
+    {
+        "_id": "591c227738eed8001a277620",
+        "email": "generalgmt@fibre.ng",
+        "age": 80,
+        "location": "Yaba",
+        "gender": "female",
+        "name": "Miquel",
+        "__v": 0,
+        "hobbies": [
+            "tennis"
+        ],
+        "preferences":
+        {
+            "hobbies": "football",
+            "gender": "male",
+            "age": 40
+        },
+        "created": "2017-05-17T10:14:15.538Z",
+        "suggested_friends": [
+            "olatunde",
+            "generalgmt"
+        ]
+    },
+    {
+        "_id": "591c22feda7660001a8f273d",
+        "email": "fuego@fibre.ng",
+        "age": 34,
+        "location": "VI",
+        "gender": "female",
+        "name": "General Bizumungu",
+        "__v": 0,
+        "hobbies": [
+            "tennis",
+            "football",
+            "scrabble"
+        ],
+        "preferences":
+        {
+            "hobbies": "football",
+            "gender": "female",
+            "age": 30,
+            "location": "Ikoyi"
+        },
+        "created": "2017-05-17T10:16:30.412Z",
+        "suggested_friends": []
+    },
+    {
+        "_id": "591c232e8ee25a001a15e99e",
+        "email": "unknown@fibre.ng",
+        "age": 40,
+        "location": "VI",
+        "gender": "female",
+        "name": "unknown",
+        "__v": 0,
+        "hobbies": [
+            "tennis",
+            "football",
+            "scrabble"
+        ],
+        "preferences":
+        {
+            "hobbies": "football",
+            "gender": "male",
+            "age": 33,
+            "location": "Ikoyi"
+        },
+        "created": "2017-05-17T10:17:18.045Z",
+        "suggested_friends": [
+            "Michael"
+        ]
+    },
+    {
+        "_id": "591c238159a13b001aebcd2e",
+        "email": "female@fibre.ng",
+        "age": 30,
+        "location": "VI",
+        "gender": "female",
+        "name": "Michael",
+        "__v": 0,
+        "hobbies": [
+            "swimming",
+            "badmiton",
+            "scrabble"
+        ],
+        "preferences":
+        {
+            "hobbies": "football",
+            "gender": "male",
+            "age": 33,
+            "location": "VI"
+        },
+        "created": "2017-05-17T10:18:41.340Z",
+        "suggested_friends": [
+            "unknown"
+        ]
+    },
+    {
+        "_id": "591c387b8ee25a001a15e99f",
+        "__v": 0,
+        "hobbies": [],
+        "preferences": {},
+        "created": "2017-05-17T11:48:11.813Z",
+        "suggested_friends": [],
+        "name": "Musa",
+        "email": "musaqiks@temple.com"
+    },
+    {
+        "_id": "59491db4a96f6900105747f8",
+        "email": "obinna@fibre.ng",
+        "age": 26,
+        "location": "VI",
+        "gender": "female",
+        "name": "General Bizumungu",
+        "__v": 0,
+        "hobbies": [
+            "tennis",
+            "football",
+            "scrabble"
+        ],
+        "preferences":
+        {
+            "hobbies": "football",
+            "gender": "female",
+            "age": 30,
+            "location": "Ikoyi"
+        },
+        "created": "2017-06-20T13:05:56.851Z",
+        "suggested_friends": []
+    }
+]

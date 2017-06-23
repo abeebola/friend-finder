@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="homepage">
+<head><% include templates/head.ejs %></head>
+<% include templates/header.ejs %>
+<section class="w-banner">
+    <div class="container">
+        <div class="col-sm-6 col-sm-offset-6">
+            <div class="m-text-placeholder">
+                <div class="w-text">
+                    <h1>Find new friends</h1>
+                    <div class="byline-holder">
+                        <div class="bylines">
+                            Search by <span class="opts">interests</span>
+                        </div>
+                    </div>
+                    <div class="start">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <a data-url="/get-started" href="/get-started" class="btn btn-lg">
+                                Get started
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="startBox">
+                    <div class="h-strip"></div>
+                    <h3><span class="backButton"><i class="fa fa-angle-left"></i>&nbsp; Back &nbsp;</span><span class="text-center spread">Your preferences</span></h3><hr />
+                    <form action="/pref-search" id="pref-form" method="post" class="form clearfix">
+                        <div class="container-fluid"> 
+                            <div class="row">
+                                <div class="form-group col-sm-12">
+                                    <label for="hobbies">Hobbies</label>
+                                    <input type="text" placeholder="(separate with commas)" name="hobbies" data-pref="hobbies" class="form-control">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="gender">Gender</label>
+                                    <select name="client" class="client-name form-control dropdown" data-pref="gender">
+                                        <option value="">Select gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="age">Age</label>
+                                    <input type="text" placeholder="18+" name="age" data-pref="age" class="form-control">
+                                </div>
+                                <div class="form-group col-sm-12">
+                                    <label for="location">Location</label>
+                                    <input type="address" placeholder="Your location" name="location" data-pref="location" class="form-control">
+                                </div>
+                            </div><!-- row -->
+                            <button class="btn red spread">Continue</button>
+                        </div>
+                        </div>
+                    </form>
+                </div><!-- startBox -->
+            </div>
+        </div> <!-- col-sm-6  -->
+    </div>
+</section>
+<% include templates/footer.ejs %>
+</html>

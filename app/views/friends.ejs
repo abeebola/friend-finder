@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="homepage">
+<head><% include templates/head %></head>
+<% include templates/header %>
+<% header = loggedIn ? `There are ${count} matches` : 'Find new friends' %>
+<div class="container">
+    <h1 style="color: #fff;"><%= header %></h1><hr />
+    <% for (var i = 0; i < count; i++){
+        if ( (i % 2) == 0 ){ %>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="user-p">
+                        <div class="uname">
+                            <p><strong>Name: </strong>
+                            <span><%= matches[i].name %></span></p>
+                        </div>
+                        <p><strong>Email: </strong>
+                        <span><%= matches[i].email %></span></p>
+                        <p><strong>Age: </strong>
+                        <span><%= matches[i].age %></span></p>
+                        <p><strong>Gender: </strong>
+                        <span><%= matches[i].gender %></span></p>
+                        <p><strong>Location: </strong>
+                        <span><%= matches[i].location %></span></p>
+                        <p><strong>Hobbies: </strong>
+                        <span><%= matches[i].hobbies.join(', ') %></span></p>
+                    </div>
+                </div>
+
+        <% } else { %>
+            <div class="col-sm-6">
+                <div class="user-p">
+                    <div class="uname">
+                        <p><strong>Name: </strong>
+                        <span><%= matches[i].name %></span></p>
+                    </div>
+                    <p><strong>Email: </strong>
+                    <span><%= matches[i].email %></span></p>
+                    <p><strong>Age: </strong>
+                    <span><%= matches[i].age %></span></p>
+                    <p><strong>Gender: </strong>
+                    <span><%= matches[i].gender %></span></p>
+                    <p><strong>Location: </strong>
+                    <span><%= matches[i].location %></span></p>
+                    <p><strong>Hobbies: </strong>
+                    <span><%= matches[i].hobbies.join(', ') %></span></p>
+                </div>
+
+            </div></div><!-- row -->
+        <% } %>
+    <% } %>
+
+</div>
+<% include templates/footer.ejs %>
+</html>

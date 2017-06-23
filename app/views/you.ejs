@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="homepage">
+<head><% include templates/head %></head>
+<% include templates/header %>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <div id="profileBox">
+                <form action="/friends" method="post" class="form clearfix">
+                    <div class="container-fluid">
+                        <h3 class="text-center">Tell us a bit about yourself</h3><hr />
+                        <div class="row">
+                            <div class="form-group col-sm-12">
+                                <label for="name">Your name</label>
+                                <input type="text" placeholder="Full name" name="name" data-pref="name" class="form-control" required>
+                            </div>
+                        </div><!-- row -->
+                        <div class="row">
+                            <div class="form-group col-sm-8">
+                                <label for="email">Email address</label>
+                                <input type="email" placeholder="Email address" name="email" data-pref="email" class="form-control" required>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="gender">Gender</label>
+                                <select name="gender" data-pref="gender" class="client-name form-control dropdown" required>
+                                    <option value="">Choose</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                        </div><!-- row -->
+                        <div class="row">
+                            <div class="form-group col-sm-8">
+                                <label for="location">Location</label>
+                                <input type="address" placeholder="Your location" name="location" data-pref="location" class="form-control" required>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="age">Age</label>
+                                <input type="text" placeholder="18+" name="age" data-pref="age" class="form-control" required>
+                            </div>
+                        </div><!-- row -->
+                        <div class="row">
+                            <div class="form-group col-sm-12">
+                                <label for="hobbies">Hobbies</label>
+                                <input type="text" placeholder="(separate with commas)" name="hobbies" data-pref="hobbies" class="form-control" required>
+                            </div>
+                        </div><!-- row -->
+                        <!--<button class="btn red spread">Continue</button>-->
+                        <button class="form-control btn red">
+                            <span class="txt">Continue</span>
+                            <div class="log-spin"></div>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<% include templates/footer.ejs %>
+</html>
